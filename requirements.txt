@@ -1,8 +1,5 @@
-openai
 python-dotenv
-pydantic==1.*
 langchain
-bs4
-tiktoken
+openai
 requests_oauthlib
 streamlit
