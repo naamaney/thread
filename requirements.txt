@@ -4,3 +4,5 @@ pydantic==1.*
 langchain
 bs4
 tiktoken
+requests_oauthlib
+streamlit
