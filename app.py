@@ -49,7 +49,8 @@ prompt = PromptTemplate(
     input_variables=["info"], template=template
 )
 
-llm = ChatOpenAI(temperature=0.7, model_name="gpt-4")
+openai_api_key = os.getenv('OPENAI_API_KEY')
+llm = ChatOpenAI(temperature=0.7, openai_api_key=openai_api_key, model='gpt-4')
 llm_chain = LLMChain(
     llm=llm,
     prompt=prompt,
